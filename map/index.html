@@ -2,10 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>deck.gl Example</title>
+  <title>Pandemic Data Hack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {margin: 0; font-family: sans-serif; width: 100vw; height: 100vh; overflow: hidden;}
+    .slider{
+      position: absolute;
+      bottom: 20px;
+      left: 20px; right: 20px;
+    }
+    .statInfo{
+      position: absolute;
+      bottom: 70px;
+      left: 30px;
+      font-family: 'TT Hoves', sans-serif;
+      font-size: 2vw;
+    }
+    .label{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-family: 'TT Hoves', sans-serif;
+      font-size: 2.3vw;
+      background: black;
+      color: white;
+      padding: .6vw;
+      box-sizing: border-box;
+    }
+    .statInfo span{
+      background: black;
+      color: white;
+      display: inline-block;
+      padding: .5vw;
+      box-sizing: border-box;
+    }
+    .statDate {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-family: 'TT Hoves', sans-serif;
+      font-size: 1vw;
+      color: #555;
+    }
+    @font-face {
+      font-family: 'TT Hoves';
+      src: local('TT Hoves Medium'), local('TT-Hoves-Medium'),
+          url('TTHoves-Medium/TTHoves-Medium.woff2') format('woff2'),
+          url('TTHoves-Medium/TTHoves-Medium.woff') format('woff'),
+          url('TTHoves-Medium/TTHoves-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
   </style>
 </head>
 <body>

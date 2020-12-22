@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Medium'), local('TT-Hoves-Medium'),
+        url('TTHoves-Medium.woff2') format('woff2'),
+        url('TTHoves-Medium.woff') format('woff'),
+        url('TTHoves-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
